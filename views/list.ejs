@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>To Do List</title>
+    <link rel="stylesheet" media="all" href="css/styles.css" type="text/css" />
+  </head>
+  <body>
+
+
+<div class="box" id="heading">
+  <h1><%= kindofday %> To-Do List</h1>
+</div>
+
+
+<div class="box" id="todo">
+  <ul>
+    <!-- <div class="item">
+      <li></li>
+      <li>Sleep</li>
+      <li>Code</li>
+      <li>Repeat</li>
+    </div> -->
+
+
+   <%  for(var i=0;i<newItm.length;i++){%>
+     <div class="item">
+       <input type="checkbox">
+       <li> <%= newItm[i] %></li>
+     </div>
+
+   <%  }%>
+  </ul>
+  <form class="item" action="/" method="post">
+    <input type="text" name="newItem" placeholder="New Item">
+    <button type="submit" name="button">+</button>
+  </form>
+    </body>
+  </html>
+</div>
+
+
+
+
+
+
+<!-- switch(currentday) {
+  case 0:
+    day="Sunday";
+    break;
+  case 1:
+  day="Monday"
+    break;
+    case 2:
+      day="Tuesday";
+      break;
+      case 3:
+        day="Wednesday";
+        break;
+        case 4:
+          day="Thursday";
+          break;
+          case 5:
+            day="Friday";
+            break;
+            case 6:
+              day="Saturday";
+              break;
+  default:
+  console.log("Error");
+} -->
